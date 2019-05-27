@@ -11,12 +11,13 @@
   var password;
   var pass1="bratan";
   password=prompt('Ez az oldal nem nyilvános, kérlek add meg a jelszót, hogy belépj!');
-  if (password==pass1)
+  //if (password==pass1)
     //alert('Helyes jelszó, kattints az OK -ra hogy belépj!');
 
-            if (password != pass1)
+            if (password != pass1) {
                 history.go(-1)
-            alert('Rossz jelszó!');
+                alert('Rossz jelszó!');
+            }
   //-->
         </script>
         <div align="center">
