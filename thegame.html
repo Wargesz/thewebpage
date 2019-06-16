@@ -4,12 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>WARGESZ'S PUB</title>
-    <script>
-    function sleep(seconds){
-    var waitUntil = new Date().getTime() + seconds*1000;
-    while(new Date().getTime() < waitUntil) true;
-        }
-        </script>
+
 </head>
 <body bgcolor="black" link="white" vlink="white" alink="white">
     <div align="center">
@@ -27,6 +22,11 @@
     <div>
         <font color="white">
             <script>
+                    function sleep(seconds){
+                var waitUntil = new Date().getTime() + seconds*1000;
+                while(new Date().getTime() < waitUntil) true;
+                        }
+                //
                 var a = 0;
                 while (a != 100) {
                     document.write("Loading game: " + a + "%");
