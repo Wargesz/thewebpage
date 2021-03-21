@@ -1,0 +1,22 @@
+<html>
+<head>
+</head>
+<body bgcolor="black">
+    <font color="white">
+    <script>
+      function parse(){
+      let string = document.getElementById('parseCode').value;
+      let parsedString;
+      parsedString = string.replace(/[^\d,]+/g, '');
+      document.getElementById('parsedCode').value = parsedString;
+      }
+    </script>
+    <div>
+      példa: ench:[{id:19,lvl:2},{id:21,lvl:10},{id:17,lvl:10},{id:22,lvl:3}]}
+    </div>
+    <input id="parseCode" type="text">
+    <button onclick="parse()">PARSE</button>
+    <input id="parsedCode" type="text">
+  </font>
+</body>
+</html>
